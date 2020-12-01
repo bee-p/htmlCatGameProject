@@ -1,0 +1,233 @@
+/*컴퓨터 구성*/
+#front {
+    z-index: 2;
+
+    width: 1000px;
+    height: 700px;
+    background-color: rgba(37, 104, 180, 0.829);
+
+    position: absolute;
+    left: 50%; top: 50%;
+    margin-left: -500px;
+    margin-top: -400px;
+
+    border: solid 8px rgb(75, 75, 75);
+}
+#back {
+    z-index: 1;
+
+    width: 1040px;
+    height: 740px;
+    background-color: rgb(75, 75, 75);
+
+    position: absolute;
+    left: 50%; top: 50%;
+    margin-left: -520px;
+    margin-top: -420px;
+
+    border: solid 10px rgb(75, 75, 75);
+    border-bottom: solid 12px rgb(36, 36, 36);
+    border-right: solid 12px rgb(36, 36, 36);
+    border-radius: 20px;
+}
+#foot {
+    z-index: 0;
+
+    width: 500px;
+    height: 400px;
+    background-color:rgb(36, 36, 36);
+
+    position: absolute;
+    left: 50%; top: 50%;
+    margin-left: -250px;
+    margin-top: -20px;
+
+    border: solid 10px rgb(36, 36, 36);
+    border-radius: 10px;
+}
+#foot_2 {
+    z-index: 1;
+
+    width: 700px;
+    height: 20px;
+    background-color:rgb(36, 36, 36);
+
+    position: absolute;
+    left: 50%; top: 50%;
+    margin-left: -350px;
+    margin-top: 370px;
+
+    border: solid 10px rgb(36, 36, 36);
+    border-radius: 10px;
+}
+
+/* 모니터 화면 내 디자인 */
+#monitor_footer {
+    z-index: 3;
+
+    width: 1000px; height: 50px;
+    background-color: rgb(202, 202, 202);
+
+    position: absolute;
+    left: 50%; top: 93%;
+    margin-left: -500px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+#monitor_footer #menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+#menu li {display: inline-block;}
+#menu li button {
+    display: inline-block;
+    width: 60px; height: 50px;
+    border-right : solid 5px rgb(92, 92, 92);
+    border-bottom : solid 5px rgb(92, 92, 92);
+    background-color: rgb(202, 202, 202);
+    padding: 0;
+}
+#menu li button img {
+    width: 50px; height: 40px;
+}
+#clock {
+    font-size: 16px;
+    font-family: 'HY견고딕';
+    font-weight: bolder;
+    color: rgb(75, 75, 75);
+
+    position: absolute;
+    top: 30%; right: 10px;
+}
+
+.icon button{
+    background-color: transparent;
+    border: 0px none;
+
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: '굴림체';
+    color: white;
+}
+.icon button img {
+    width: 80px;
+    height: 80px;
+}
+
+#help {
+    position: absolute;
+    left: 50%; top: 50%;
+    margin-left: 120px;
+    margin-top: -180px;
+}
+#game {
+    position: absolute;
+    left: 50%; top: 50%;
+    margin-left: -200px;
+    margin-top: 30px;
+}
+
+#game_window {
+    display: none;
+}
+#game_window > div {
+    z-index: 5;
+
+    position: absolute;
+    left: 15%; top: 25%;
+    margin-left: -100px;
+    margin-top: -120px;
+}
+#game_window > div:nth-child(1) {
+    background-color: rgb(101, 101, 243);
+    width: 600px; height: 20px;
+}
+#game_window > div:nth-child(2) {
+    background-color: whitesmoke;
+    width: 600px; height: 495px;
+
+    margin-top: -100px;
+}
+
+#gameOver_window {
+    display: none;
+}
+#gameOver_window > div {
+    z-index: 7;
+
+    position: absolute;
+    left: 40%; top: 40%;
+    margin-left: -100px;
+    margin-top: -120px;
+
+    width: 400px;
+}
+#gameOver_window > div:nth-child(1) {
+    z-index: 6;
+    background-color: rgb(101, 101, 243);
+    height: 20px;
+}
+#gameOver_window > div:nth-child(2) {
+    z-index: 5;
+    background-color: whitesmoke;
+    height: 240px;
+
+    text-align: center;
+}
+#gameOver_window h1 {
+    font-size: 56px;
+    font-family: "HY견고딕";
+
+    position: absolute;
+    left: 40%; top: 13%;
+    margin-left: -130px;
+}
+#gameOver_window p {
+    font-size: 25px;
+    font-family: "HY견고딕";
+
+    position: absolute;
+    left: 65%; top: 53%;
+    margin-left: -140px;
+}
+
+
+#help_window {
+    display: none;
+}
+#help_window > div {
+    z-index: 4;
+
+    position: absolute;
+    left: 50%; top: 50%;
+    margin-left: 90px;
+    margin-top: -150px;
+}
+#help_window > div:nth-child(1) {
+    background-color: rgb(101, 101, 243);
+    width: 340px; height: 20px;
+}
+#help_window > div:nth-child(2) {
+    background-color: whitesmoke;
+    width: 340px; height: 350px;
+
+    margin-top: -130px;
+
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: '한컴바탕확장';
+    text-align: center;
+
+    /* overflow-y: scroll; */
+}
+#help_window button, #game_window button, #gameOver_window button {
+    float: right;
+    width: 30px;
+
+    background-color: transparent;
+    border: 0px none;
+}
